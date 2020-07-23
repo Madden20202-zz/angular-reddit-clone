@@ -3,14 +3,17 @@
 
   <div class="field">
     <label for="title">Title</label>
-    <input name="title" id="title" #newTitle>
+    <!--This is where the title info is gathered-->
+    <input name="title" id="title" #newTitle> 
   </div>
 
   <div class="field">
     <label for="link">Link</label>
+    <!--This is where the link info is gathered-->
     <input name="link" id="link" #newLink>
   </div>
 
+  <!--Button Work, refer to app.component.ts for the logic-->
   <button (click)= "addArticle(newTitle, newLink)" 
     class= "ui positive right floating button">
     Submit Link
