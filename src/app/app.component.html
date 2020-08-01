@@ -19,11 +19,11 @@
     Submit Link
   </button>
 
-  <!--Shows the actual posts made-->
+  <!--Shows the actual posts made and sorts it-->
   <div class="ui grid posts">
     <!--Allows the articles to be iterated over and over again-->
     <app-article
-      *ngFor="let article of articles" 
+      *ngFor="let article of sortArticle()" 
       [article]="article">
     </app-article>
   </div>
